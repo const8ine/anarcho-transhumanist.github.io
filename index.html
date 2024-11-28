@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>International Left Anarcho-Transhumanist Movement</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js" defer></script>
+</head>
+
+<body>
+<div class="container">
+    <h1>International Left Anarcho-Transhumanist Movement</h1>
+    <p class="text-bigger">We Don’t Exist — Yet</p>
+    <p>But we are many — like-minded transhumanists sharing a vision for the future.
+        Read the first version of our <a href="#">manifesto</a>.
+        Join us and help build our global community.
+    </p>
+
+    <form class="contact-form" id="contact-form" onsubmit="sendEmail(); return false;">
+        <div class="contact-form__row">
+            <input id="full-name" name="fullName" placeholder="Your Name" required type="text">
+        </div>
+        <div class="contact-form__row">
+            <input id="email-input" name="email" placeholder="Enter your email" required type="email">
+        </div>
+        <div class="contact-form__row hidden" id="subject-container">
+            <input id="subject" name="subject" placeholder="Subject" required type="text">
+        </div>
+        <button class="button" type="submit" aria-label="Send your contact information">Send</button>
+    </form>
+
+    <a id="send-email" style="display: none;"></a>
+</div>
+</body>
+</html>
